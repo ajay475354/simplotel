@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    min-width:100%;
+}
+.navbar{
+    min-height:3vh;
+    width: auto;
+    background-color: #ffffff;
+    padding:0.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo_image{
+    height: 70px;
+    width: 100px;
+}
+.nav_unorder_container{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+
+}
+.tabs{
+    font-size: clamp(18px,1.458vw,26px);
+    padding:0 20px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.media_imge{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+/*....home_image..*/
+
+.home_image_container{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+.home_image{
+    width: 100%;
+    max-height: 700px;
+    
+}
+.text{
+    position: absolute;
+    bottom: 20px;
+    background: rgb(31,31,32);
+    background: linear-gradient(90deg, rgba(31,31,32,1) 67%, rgba(244,235,235,1) 100%);  
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    left: 50px;
+    padding: 0px 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+}
+
+/*.....home_content......*/
+
+.home_content_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: gray;
+    height: 25vh;
+    
+    
+}
+.content_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 30%;
+}
+.content{
+    font-size: 19px;
+    text-align: center;
+}
+
+/*..............offerings content.....*/
+
+.offerings_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color:  #dad6df;
+    
+    
+}
+.offer_head{
+    font-family: sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: 32px;
+    margin-top:40px;
+    margin-left: 60px;
+}
+.offerings{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.offering_content_container{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: flex-start;
+}
+.head{
+    font-family: sans-serif;
+    font-size: 22px;
+    color: black;
+    margin-top: 20PX;
+}
+.description{
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: none;
+    margin-top: 10px;
+}
+
+.button{
+    width: 100px;
+    padding: 5px;
+    background-color: black;
+    color: #ffffff;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.offering_content_container_1{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+
+}
+.offer_image{
+    width: 100%;
+}
+.offering_content_container_2{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+
+}
+
+/*................................responsive design......................................*/
+
+@media screen and (max-width:768px){
+    .nav_unorder_container{
+        display: none;
+    }
+    .media_imge{
+        height: 50px;
+        width: 50px;
+    }
+    .text{
+        font-size: 15px;
+        width: 100px;
+        font-weight: 300;
+        left: 15px;
+        padding: 5px;
+    }
+    .home_content_container{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .content_container{
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .offerings{
+        flex-direction: column;
+    }
+    .offering_content_container{
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .offering_content_container_1{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .offering_content_container_2{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .offer_head{
+        font-size: 22px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+    }
+    .offering_content_container{
+        margin-top: 0px;
+    }
+    .head{
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width:900px){
+    .nav_unorder_container{
+        display: none;
+    }
+    .offer_head{
+        margin-left: 30px;
+    }
+}

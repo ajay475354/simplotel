@@ -1,0 +1,1 @@
+The parameters for the Front End Developer (HTML, CSS) assignment.
